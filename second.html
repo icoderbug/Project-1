@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CareNest Hospital</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          boxShadow: {
+            glow: '0 0 20px rgba(0, 255, 255, 0.6)',
+            glowHover: '0 0 30px rgba(0, 255, 255, 0.9)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .glow-text {
+      text-shadow: 0 0 10px #aafaff;
+    }
+  </style>
+</head>
+<body class="bg-black text-white font-sans min-h-screen relative overflow-hidden">
+
+  <!-- Background Image -->
+  <div class="absolute inset-0 bg-cover bg-center opacity-20 z-0" style="background-image: url('hospital 1.png');"></div>
+
+  <!-- Content Wrapper -->
+  <div class="relative z-10 p-4">
+
+    <!-- Social Icons -->
+    <div class="absolute top-4 right-6 flex space-x-5 text-xl">
+      <a href="mailto:info@carenesthospital.com" target="_blank" class="text-cyan-400 hover:text-cyan-300 transition"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com" target="_blank" class="text-cyan-400 hover:text-cyan-300 transition"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com" target="_blank" class="text-cyan-400 hover:text-cyan-300 transition"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="text-center mt-20" data-aos="fade-down">
+      <h1 class="text-4xl md:text-5xl font-bold mb-2 glow-text">Welcome to <span class="text-cyan-400">CareNest Hospital</span></h1>
+      <p class="text-blue-300 mb-8">Your Health, Our Mission</p>
+      <button class="px-6 py-2 border border-cyan-400 rounded hover:shadow-glowHover shadow-glow hover:scale-105 transition duration-300"><a href="https://auth.geeksforgeeks.org/user/prateeksixztm">Book Appointment</button>
+    </div></a>
+
+    <!-- Services Section -->
+    <div class="mt-16 text-center" data-aos="fade-up">
+      <h2 class="text-2xl font-semibold mb-4">Our Services</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4">
+        <div class="p-4 border border-cyan-400 rounded hover:shadow-glowHover shadow-glow hover:scale-105 transition duration-300">24/7 Emergency</div>
+        <div class="p-4 border border-cyan-400 rounded hover:shadow-glowHover shadow-glow hover:scale-105 transition duration-300">General Surgery</div>
+        <div class="p-4 border border-cyan-400 rounded hover:shadow-glowHover shadow-glow hover:scale-105 transition duration-300">Cardiology</div>
+        <div class="p-4 border border-cyan-400 rounded hover:shadow-glowHover shadow-glow hover:scale-105 transition duration-300">Pediatrics</div>
+        <div class="p-4 border border-cyan-400 rounded hover:shadow-glowHover shadow-glow hover:scale-105 transition duration-300">Orthopedics</div>
+        <div class="p-4 border border-cyan-400 rounded hover:shadow-glowHover shadow-glow hover:scale-105 transition duration-300">Neurology</div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-20 text-center text-sm text-gray-400" data-aos="fade-up">
+      &copy; 2025 CareNest Hospital. All rights reserved.
+    </footer>
+
+  </div>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
+</body>
+</html>
