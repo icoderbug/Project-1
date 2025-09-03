@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CareNest Patient Portal</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Glow Theme -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          boxShadow: {
+            glow: '0 0 12px rgba(0, 255, 255, 0.5)',
+            glowHover: '0 0 20px rgba(0, 255, 255, 0.8)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .glow-text {
+      text-shadow: 0 0 8px #aafaff;
+    }
+  </style>
+</head>
+<body class="bg-black text-white min-h-screen font-sans">
+
+  <!-- Header -->
+  <div class="p-6 text-center">
+    <h1 class="text-4xl font-bold glow-text">Welcome to the <span class="text-cyan-400">CareNest Patient Portal</span></h1>
+    <p class="text-gray-400 mt-2">Secure, easy access to your health and appointments.</p>
+  </div>
+
+  <!-- Portal Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-12 px-4">
+
+    <!-- Appointments -->
+    <div class="bg-gray-900 rounded-lg p-6 shadow-glow transition hover:shadow-glowHover hover:scale-105">
+      <h2 class="text-xl font-semibold text-cyan-300 mb-2">Appointments</h2>
+      <p class="text-gray-300 text-sm mb-4">View and manage your appointments.</p>
+      <a href="details.html" class="text-cyan-400 underline hover:text-cyan-300 text-sm">View Details</a>
+    </div>
+
+    <!-- Medical Records -->
+    <div class="bg-gray-900 rounded-lg p-6 shadow-glow transition hover:shadow-glowHover hover:scale-105">
+      <h2 class="text-xl font-semibold text-cyan-300 mb-2">Medical Records</h2>
+      <p class="text-gray-300 text-sm mb-4">Access prescriptions and lab reports.</p>
+      <a href="#" class="text-cyan-400 underline hover:text-cyan-300 text-sm">Access Records</a>
+    </div>
+
+    <!-- Payments -->
+    <div class="bg-gray-900 rounded-lg p-6 shadow-glow transition hover:shadow-glowHover hover:scale-105">
+      <h2 class="text-xl font-semibold text-cyan-300 mb-2">Billing & Payments</h2>
+      <p class="text-gray-300 text-sm mb-4">Review billing history and pay online.</p>
+      <a href="bills.html" class="text-cyan-400 underline hover:text-cyan-300 text-sm">Pay Now</a>
+    </div>
+
+    <!-- Health History -->
+    <div class="bg-gray-900 rounded-lg p-6 shadow-glow transition hover:shadow-glowHover hover:scale-105">
+      <h2 class="text-xl font-semibold text-cyan-300 mb-2">Health History</h2>
+      <p class="text-gray-300 text-sm mb-4">See your treatment and visit timeline.</p>
+      <a href="history.html" class="text-cyan-400 underline hover:text-cyan-300 text-sm">View History</a>
+    </div>
+
+    <!-- Update Info -->
+    <div class="bg-gray-900 rounded-lg p-6 shadow-glow transition hover:shadow-glowHover hover:scale-105">
+      <h2 class="text-xl font-semibold text-cyan-300 mb-2">Update Profile</h2>
+      <p class="text-gray-300 text-sm mb-4">Edit contact and personal information.</p>
+      <a href="#" class="text-cyan-400 underline hover:text-cyan-300 text-sm">Update Now</a>
+    </div>
+
+    <!-- Log Out -->
+    <div class="bg-gray-900 rounded-lg p-6 shadow-glow transition hover:shadow-glowHover hover:scale-105 flex flex-col justify-between">
+      <div>
+        <h2 class="text-xl font-semibold text-cyan-300 mb-2">Logout</h2>
+        <p class="text-gray-300 text-sm mb-4">End your session securely.</p>
+      </div>
+      <button class="mt-2 py-2 px-4 bg-red-500 text-white rounded hover:bg-red-400 transition">Logout</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="mt-20 text-center text-sm text-gray-500">&copy; 2025 CareNest Hospital. All rights reserved.</footer>
+
+</body>
+</html>
